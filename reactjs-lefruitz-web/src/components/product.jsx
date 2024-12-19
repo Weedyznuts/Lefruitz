@@ -4,6 +4,7 @@ import Apple from '../assets/img/apple.jpeg';
 import { useEffect,useState } from 'react';
 import { Link, BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { PrivateRoute } from '../uts/privateRoute';
+import ProductRole from './productRole';
 
 export default function product() {
   const IsLoggedIn=window.localStorage.getItem('token');
@@ -33,7 +34,7 @@ export default function product() {
       {products.map((item)=>(
         <div key={item.id_product} className='product-item'>
           <img src={item.image} alt=''/>
-          <Link to={`/shopDetails/${item.id_product}`}>
+          <Link to={`/productrole/${item.id_product}`}>
             <h4>
               {item.nama_product}
             </h4>

@@ -1,11 +1,13 @@
 import React from 'react';
-import Menu from './menu';
+import Menu from './menuUser';
 import Footer from './footer';
 import { useEffect,useState } from 'react';
-import {useParams} from 'react-router-dom';
+import {useParams, useNavigate} from 'react-router-dom';
+import Stock from './stockDetails';
 import '../index.css';
 
 export default function details() {
+  const navigate=useNavigate();
   const {id}=useParams();
   const [product,setProducts]=useState([]);
   const [loading,setLoading]=useState(true);

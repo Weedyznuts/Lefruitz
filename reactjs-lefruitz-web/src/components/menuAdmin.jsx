@@ -16,7 +16,7 @@ export default function menuAdmin() {
   const navigate=useNavigate();
   const token=localStorage.getItem('role');
   if (token!='admin') {
-    handleLogout;
+    handleLogout();
   }
   const handleLogout=()=>{
     localStorage.removeItem('token');

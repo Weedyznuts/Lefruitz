@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Menu from './menuAdmin';
+import Menu from './menuUser';
 import Hero from './hero';
 import Product from './product';
 import More from './more';
